@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+</head>
+<style>
+
+div h2{
+    background: #ffffff00;
+    /* padding: 10px 20px 10px 20px; */
+    text-align: center;
+    font-size: 30px;
+}
+.container{
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 60px ;
+    border: 1px solid ;
+    border-radius: 15px;
+}
+
+select,button,input,option{
+    background: transparent;
+    border: 1px solid;
+}
+option{
+    color: #000000;
+}
+button{
+background: green;
+height: 30px;
+}
+input{
+    height: 30px;
+}
+select{
+    height: 30px;
+}
+
+</style>
+<body style="background-color: lightblue">
+    <div style="display: flex;justify-content: center;">
+    <div style="display: flex;justify-content: center;flex-direction: column;width: 33vw;">
+       <div ><h2 >Registeration form</h2></div> 
+       <form action="submit">
+            <div class="container" style="display: flex;flex-direction: column;gap: 10px;">
+                
+                <label for="UserName">UserName</label>
+                <input type="text" name="UserName" id="Username">
+                <label for="Name">Name</label>
+                <input type="text" name="Name">
+                <label for="Age">Age</label>
+                <input type="number" name="Age">
+                <label for="Email_Id">Email Id</label>
+                <input type="email" name="Email_Id">
+                <label for="Gender">Gender</label>
+                <!-- <div style="display: flex;"><label for="male">Male</label><input type="radio" name="gender"></div>
+                <div style="display: flex;">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender">
+</div> -->
+                    
+                    <label for="gender">GENDER</label>
+                    <select name="gender" id="gender">
+                        <option value="male">MALE</option>
+                        
+                        <option value="female">FEMALE</option>
+                        <option value="others">OTHERS</option>
+                    </select>
+                
+            
+                    
+                    <label for="country">COUNTRY</label>
+                    <select name="country" id="country">
+                        <option value="India">INDIA</option>
+                        <option value="America">AMERICA</option>
+                        <option value="UK">UK</option>
+                    </select>
+                    <button type="submit">SUBMIT</button>
+                    <button type="reset">RESET</button>
+                </div>
+                
+            </div>
+        </form>
+    </div></div>
+</body>
+
+</html>
